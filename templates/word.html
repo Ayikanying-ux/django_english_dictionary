@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+    {% block body %}
+    <div class="wrap">
+        <div class="search">
+            <h3>Meaning: {{ meaning }}</h3>
+            {% for synonym in synonyms %}
+                <h3>Synonym: {{ synonym }}</h3>
+            {% endfor %}
+            {% for antonym in antonyms %}
+            <h3>Antonym:  {{ antonym }}</h3>
+            {% endfor %}
+        </div>
+    </div>
+    {% endblock %}

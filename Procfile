@@ -1,0 +1,1 @@
+web gunicorn django_english_dictionary.wsgi:application --log-file -
